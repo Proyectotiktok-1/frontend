@@ -1,6 +1,6 @@
-function Label() {
+function Label(props) {
     return(
-        <p> registrate</p>
+        <p>{props.texto}</p>
     );
 }
 export default Label;

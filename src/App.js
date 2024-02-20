@@ -6,7 +6,7 @@ import Label from "./Components/Label"
 function App() {
   return (
     <div>
-      <Label> </Label>
+      <Label  texto={"Registrate Ahora"}> </Label>
       <Input> </Input>
       <Button> </Button>
     </div>
