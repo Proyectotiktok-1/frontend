@@ -1,8 +1,6 @@
 function Button() {
     return (
-      <div>
-        <h1>Hola Mundo</h1>
-      </div>
+      <button> Registrarse </button>
     );
   }
 export default Button;
