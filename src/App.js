@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Button from "./Components/Button";
 import Input from "./Components/Input";
 import Label from "./Components/Label"
 import axios from 'axios';
+import InputPassword from  "./Components/InputPassword.jsx"
 function App() {
 const singUpUser = () => {
   const userData = {
@@ -21,8 +21,20 @@ const singUpUser = () => {
    }  
   return (
     <div>
-      <Label  texto={"Registrate Ahora"}> </Label>
-      <Input> </Input>
+      
+      <Label texto="Regístrate ahora"> </Label>
+
+      <Label texto="Correo Electrónico:"> </Label>
+      <Input placeholder="Felix@gmail.com"> </Input>
+
+      <Label texto="Nombre de usuario:"> </Label>
+      <Input placeholder="Usuario 123"> </Input>
+
+      <Label texto="Contraseña:"> </Label>
+      <InputPassword placeholder="**********"> </InputPassword>
+
+      <Label texto="Confirma la contraseña:"> </Label>
+      <InputPassword placeholder="**********"> </InputPassword>
       <Button singUpUser={singUpUser} > </Button>
     </div>
   );
