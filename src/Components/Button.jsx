@@ -1,6 +1,6 @@
-function Button() {
+function Button(props) {
     return (
-      <button> Registrarse </button>
+      <button onClick={props.singUpUser}> Registrarse </button>
     );
   }
 export default Button;
